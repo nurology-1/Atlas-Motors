@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: normal;
     background-color: 0D1117;
@@ -13,6 +15,7 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
-footer{
-    justify-content: bottom;
+#footer {
+  background-color: #f3e5f5;
+  padding: 20px;
 }

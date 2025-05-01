@@ -13,3 +13,6 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
+footer{
+    justify-content: bottom;
+}

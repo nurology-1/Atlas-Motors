@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vehicles | Nebula</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Nebula Vehicles</h1>
+    <a href="../index.html">← Back to Home</a>
+  </nav>
+
+  <!-- Vehicle Grid -->
+  <main class="vehicle-grid">
+    <!-- Example Vehicle Card -->
+    <div class="vehicle-card" data-id="car1">
+      <img src="car1-1.jpg" alt="Car 1"/>
+      <h2>Dodge Charger SRT</h2>
+      <p>$38,000</p>
+    </div>
+
+    <div class="vehicle-card" data-id="car2">
+      <img src="car2-1.jpg" alt="Car 2"/>
+      <h2>Jeep Trackhawk</h2>
+      <p>$68,000</p>
+    </div>
+  </main>
+
+  <!-- Fullscreen Popup -->
+  <div id="vehicleModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+
+      <!-- Carousel -->
+      <div class="carousel">
+        <button class="prev">&#10094;</button>
+        <img id="carouselImage" src="" alt="Car Image"/>
+        <button class="next">&#10095;</button>
+      </div>
+
+      <!-- Info Section -->
+      <div class="vehicle-info">
+        <h2 id="vehicleTitle"></h2>
+        <p id="vehiclePrice"></p>
+        <ul id="vehicleSpecs"></ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Nebula Vehicles</p>
+  </footer>
+</body>
+</html>

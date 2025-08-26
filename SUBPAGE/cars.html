@@ -1,50 +1,42 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cars | Back2Drive</title>
-  <link rel="stylesheet" href="../ASSETS/CSS/cars.css"/>
-  <script defer src="../scripts.js"></script>
+  <link rel="icon" type="image/x-icon" href="../ASSETS/IMGS/logo.png">
+  <link rel="stylesheet" href="../main.css" />
+  <script type="module" defer src="../scripts.js"></script>
 </head>
 <body>
+  
+  <!-- Floating Nav Bar -->
   <nav class="navbar">
-    <h1>Back2Drive (Auto Mall/Auto Shop/Customs)</h1>
-    <a href="../index.html">← Home</a>
+    <div class="navbar-content">
+      <!-- Left side navigation -->
+      <div class="nav-links">
+        <a href="../index.html" class="nav-btn">Home</a>
+      </div>
+
+      <!-- Center logo -->
+      <div class="navbar-logo">
+        <img src="../ASSETS/IMGS/logo.png" alt="Logo" height="40"/>
+      </div>
+
+      <!-- Right side dark mode toggle -->
+      <button id="darkModeToggle" class="nav-btn">Toggle Dark Mode</button>
+    </div>
   </nav>
 
-  <!-- Vehicle Grid -->
-  <main class="vehicle-grid">
-    <!-- Example Vehicle Card -->
-    <div class="vehicle-card" data-id="car1">
-      <img src="car1-1.jpg" alt="Car 1"/>
-      <h2>{Year} {Make} {Model} {Package} {Trim}</h2>
-      <p>$000,000</p>
-    </div>
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>Cars</h1>
+    <p>Ongoing Constuction</p>
+  </main>
 
-  <!-- Fullscreen Popup -->
-  <div id="vehicleModal" class="modal">
-    <div class="modal-content">
-      <button class="close-btn">&times;</button>
-
-      <!-- Carousel -->
-      <div class="carousel">
-        <button class="prev">&#10094;</button>
-        <img id="carouselImage" src="" alt="Car Image"/>
-        <button class="next">&#10095;</button>
-      </div>
-
-      <!-- Info Section -->
-      <div class="vehicle-info">
-        <h2 id="vehicleTitle"></h2>
-        <p id="vehiclePrice"></p>
-        <ul id="vehicleSpecs"></ul>
-      </div>
-    </div>
-  </div>
-
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Nebula Vehicles</p>
+    <p>v0.01 | <a href="https://github.com/nurology-1/Back2Drive">Github</a> | © 2025 Back2Drive</p>
   </footer>
+
 </body>
 </html>
